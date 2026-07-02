@@ -431,6 +431,10 @@ section{
           VAN CAMPAIGN
 ====================================*/
 
+/*====================================
+          VAN CAMPAIGN
+====================================*/
+
 .van-section{
     background:#f7f4ef;
 }
@@ -438,7 +442,7 @@ section{
 .van-gallery{
 
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
     gap:30px;
     margin-bottom:40px;
 
@@ -446,7 +450,7 @@ section{
 
 .van-card{
 
-    background:#fff;
+    background:#ffffff;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
@@ -490,8 +494,23 @@ section{
 
     color:#666;
     line-height:1.9;
+    font-size:17px;
 
 }
+
+@media (max-width:900px){
+
+    .van-gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/*====================================
+                EXPO
+====================================*/
+
 /*====================================
                 EXPO
 ====================================*/
@@ -511,7 +530,7 @@ section{
 
 .expo-card{
 
-    background:#fff;
+    background:#ffffff;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
@@ -531,6 +550,41 @@ section{
     height:420px;
     object-fit:cover;
     display:block;
+
+}
+
+.project-description{
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.project-description h3{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#d67b28;
+    margin-bottom:15px;
+
+}
+
+.project-description p{
+
+    color:#666;
+    line-height:1.9;
+    font-size:17px;
+
+}
+
+@media (max-width:900px){
+
+    .expo-gallery{
+
+        grid-template-columns:1fr;
+
+    }
 
 }
 /*====================================
