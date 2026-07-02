@@ -440,45 +440,57 @@
         <h1>Thank You</h1>
 
         <p>
-            Thank you for taking the time to view this portfolio.
-            I look forward to creating more impactful marketing
-            and branding solutions.
+            Thank you for taking the time to view my portfolio.
+            I appreciate your interest in my work and look forward
+            to creating impactful branding, marketing, and design solutions.
         </p>
 
         <div class="contact-details">
 
-            <p><strong>Email :</strong> chelsearavikumar@gmail.com</p>
+            <p>
+                <strong>Email :</strong>
+                <a href="mailto:chelsearavikumar@gmail.com">
+                    chelsearavikumar@gmail.com
+                </a>
+            </p>
 
-            <p><strong>Phone :</strong> +91 9789644871</p>
+            <p>
+                <strong>Phone :</strong>
+                <a href="tel:+919789644871">
+                    +91 9789644871
+                </a>
+            </p>
 
-            <p><strong>LinkedIn :</strong>
+            <p>
+                <strong>LinkedIn :</strong>
                 <a href="https://www.linkedin.com/in/chelsea19" target="_blank">
                     www.linkedin.com/in/chelsea19
                 </a>
             </p>
 
-            <p><strong>Location :</strong> Tamil Nadu, India</p>
+            <p>
+                <strong>Location :</strong>
+                Tamil Nadu, India
+            </p>
 
         </div>
 
     </div>
 
 </section>
+
 <div id="lightbox" class="lightbox">
 
     <span class="close-lightbox">&times;</span>
 
     <img id="lightbox-img" src="" alt="Preview">
+
 </div>
-<section class="contact-section">
 
-    ...
-
-</section>
 <script>
 
 const images = document.querySelectorAll(
-    ".flyer-card img, .portfolio-image img, .social-item img, .magazine-card img"
+".flyer-card img, .portfolio-image img, .social-item img, .magazine-card img, .van-card img, .expo-card img"
 );
 
 const lightbox = document.getElementById("lightbox");
@@ -490,7 +502,6 @@ images.forEach(image => {
     image.addEventListener("click", () => {
 
         lightbox.style.display = "flex";
-
         lightboxImg.src = image.src;
 
     });
@@ -505,7 +516,7 @@ closeBtn.addEventListener("click", () => {
 
 lightbox.addEventListener("click", (e) => {
 
-    if(e.target === lightbox){
+    if (e.target === lightbox) {
 
         lightbox.style.display = "none";
 
@@ -515,7 +526,5 @@ lightbox.addEventListener("click", (e) => {
 
 </script>
 
-</body>
-</html>
 </body>
 </html>
