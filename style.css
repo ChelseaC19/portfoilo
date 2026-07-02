@@ -1,0 +1,900 @@
+/*====================================
+        GOOGLE FONTS
+====================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*====================================
+        RESET
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f7f4ef;
+    color:#222;
+    overflow-x:hidden;
+
+}
+
+/*====================================
+        COMMON SECTION
+====================================*/
+
+section{
+
+    width:100%;
+    min-height:100vh;
+    padding:100px 9%;
+
+}
+
+.section-header{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.section-number{
+
+    display:block;
+    font-size:80px;
+    color:#d7cfc4;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+    margin-bottom:10px;
+
+}
+
+.section-header h2{
+
+    font-size:52px;
+    font-family:'Cormorant Garamond',serif;
+    color:#222;
+    margin-bottom:15px;
+
+}
+
+.section-header p{
+
+    width:65%;
+    margin:auto;
+    color:#666;
+    line-height:1.9;
+
+}
+
+/*====================================
+        COVER PAGE
+====================================*/
+
+.cover-page{
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.cover-content h1{
+
+    font-size:90px;
+    font-family:'Cormorant Garamond',serif;
+    color:#1b1b1b;
+    margin-bottom:15px;
+
+}
+
+.portfolio-text{
+
+    color:#d67b28;
+    letter-spacing:8px;
+    margin-bottom:20px;
+    font-size:18px;
+
+}
+
+.cover-content h3{
+
+    color:#555;
+    font-weight:500;
+    margin-bottom:25px;
+
+}
+
+.tagline{
+
+    color:#777;
+    font-size:18px;
+
+}
+/*====================================
+        PERSONAL DETAILS
+====================================*/
+
+.personal-details{
+
+    background:#ffffff;
+
+}
+
+.profile-container{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+
+}
+
+.profile-image{
+
+    flex:1;
+
+}
+
+.profile-image img{
+
+    width:100%;
+    max-width:430px;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.profile-content{
+
+    flex:1;
+
+}
+
+.profile-content h1{
+
+    font-size:55px;
+    font-family:'Cormorant Garamond',serif;
+    color:#222;
+    margin-bottom:15px;
+
+}
+
+.profile-content h3{
+
+    color:#d67b28;
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:30px;
+
+}
+
+.about{
+
+    color:#666;
+    line-height:2;
+    margin-bottom:35px;
+    text-align:justify;
+
+}
+
+.contact-box{
+
+    margin-bottom:35px;
+
+}
+
+.contact-box p{
+
+    margin-bottom:12px;
+    font-size:16px;
+    color:#444;
+
+}
+
+.skills{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+}
+
+.skills span{
+
+    background:#f7f4ef;
+    padding:10px 20px;
+    border-radius:30px;
+    border:1px solid #e5ddd1;
+    transition:.3s;
+
+}
+
+.skills span:hover{
+
+    background:#d67b28;
+    color:#fff;
+    cursor:pointer;
+
+}
+/*====================================
+      FLYERS & BROCHURES
+====================================*/
+
+.flyers-section{
+    background:#f7f4ef;
+}
+
+.flyer-category{
+    margin-bottom:80px;
+}
+
+.flyer-category h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    color:#d67b28;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.flyer-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+.flyer-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.flyer-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.flyer-card img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+
+}
+
+.flyer-description{
+
+    margin-top:30px;
+    text-align:center;
+    color:#666;
+    line-height:1.8;
+    font-size:15px;
+
+}
+/* ===========================
+   FLYERS & BROCHURES
+=========================== */
+
+.flyers-section{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 60px;
+}
+
+.flyers-section .section-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.portfolio-card{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+
+    align-items:start;
+
+    margin-bottom:70px;
+
+}
+
+.portfolio-image{
+
+    text-align:center;
+
+}
+
+.portfolio-image img{
+
+    width:100%;
+    max-width:520px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.portfolio-content{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.portfolio-content span{
+
+    font-size:28px;
+    color:#c89b3c;
+    font-weight:bold;
+
+}
+
+.portfolio-content h3{
+
+    margin:15px 0;
+
+    font-size:34px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.portfolio-content p{
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    color:#555;
+
+}
+/*====================================
+            MAGAZINE
+====================================*/
+
+.magazine-section{
+    background:#ffffff;
+}
+
+.magazine-container{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.magazine-card{
+
+    width:100%;
+    max-width:850px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    margin-bottom:35px;
+
+}
+
+.magazine-card img{
+
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    display:block;
+
+}
+
+.magazine-description{
+
+    max-width:850px;
+    text-align:center;
+
+}
+
+.magazine-description h3{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#d67b28;
+    margin-bottom:18px;
+
+}
+
+.magazine-description p{
+
+    color:#666;
+    line-height:1.9;
+
+}
+/*====================================
+          VAN CAMPAIGN
+====================================*/
+
+.van-section{
+    background:#f7f4ef;
+}
+
+.van-gallery{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-bottom:40px;
+
+}
+
+.van-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.van-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.van-card img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+
+}
+
+.project-description{
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.project-description h3{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#d67b28;
+    margin-bottom:15px;
+
+}
+
+.project-description p{
+
+    color:#666;
+    line-height:1.9;
+
+}
+/*====================================
+                EXPO
+====================================*/
+
+.expo-section{
+    background:#ffffff;
+}
+
+.expo-gallery{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-bottom:40px;
+
+}
+
+.expo-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.expo-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.expo-card img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+
+}
+/*====================================
+        SOCIAL MEDIA POSTS
+====================================*/
+
+.social-section{
+    background:#f7f4ef;
+}
+
+.social-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-bottom:40px;
+
+}
+
+.social-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.social-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.social-card img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+
+}
+/*====================================
+     WHATSAPP BULK MESSAGING
+====================================*/
+
+.whatsapp-section{
+    background:#ffffff;
+}
+
+.whatsapp-gallery{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-bottom:40px;
+
+}
+
+.whatsapp-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+
+}
+
+.whatsapp-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.whatsapp-card img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+
+}
+/* ===== Flyers Grid ===== */
+
+.flyers-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+    margin-top:50px;
+}
+
+.flyer-item{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.flyer-item h3{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.flyer-item img{
+    width:100%;
+    height:350px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.flyer-item p{
+    line-height:1.7;
+}
+
+@media (max-width:900px){
+
+    .flyers-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+/*====================================
+            MAGAZINE
+====================================*/
+
+.magazine-card{
+
+    max-width:900px;
+    margin:60px auto;
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+.magazine-card h3{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#d67b28;
+
+}
+
+.magazine-card img{
+
+    width:100%;
+
+    max-width:650px;
+
+    border-radius:15px;
+
+    margin:20px 0;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.magazine-card p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-top:20px;
+
+}
+/*====================================
+        SOCIAL MEDIA POSTS
+====================================*/
+
+.social-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+    margin-top:50px;
+}
+
+.social-item{
+    background:#ffffff;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:0.3s ease;
+}
+
+.social-item:hover{
+    transform:translateY(-8px);
+}
+
+.social-item h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    color:#d67b28;
+    margin-bottom:20px;
+}
+
+.social-item img{
+    width:100%;
+    height:420px;
+    object-fit:contain;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.social-item p{
+    font-size:16px;
+    line-height:1.8;
+    color:#555;
+}
+
+@media (max-width:900px){
+
+    .social-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+/*====================================
+            NAVBAR
+====================================*/
+
+html{
+    scroll-behavior:smooth;
+}
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px 50px;
+
+    background:rgba(18,18,18,.95);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+    box-sizing:border-box;
+
+}
+
+.logo{
+
+    color:#d67b28;
+
+    font-size:28px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-weight:700;
+
+}
+
+.navbar nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.navbar nav a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar nav a:hover{
+
+    color:#d67b28;
+
+    border-bottom:2px solid #d67b28;
+
+    padding-bottom:4px;
+
+}
+}
+/*====================================
+            LIGHTBOX
+====================================*/
+
+.lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 30px rgba(255,255,255,.2);
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:25px;
+
+    right:40px;
+
+    color:#fff;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
